@@ -45,9 +45,12 @@
 
 //module: import / export / export default
 
-import PI, { sum as newSum, sub, multi } from "./math.js";
-console.log("sum", newSum(1,2))
-console.log("sub", sub(1,2))
-console.log("multi", multi(1,2))
-console.log(PI)
+// import PI, { sum as newSum, sub, multi } from "./math.js";
+// console.log("sum", newSum(1,2))
+// console.log("sub", sub(1,2))
+// console.log("multi", multi(1,2))
+// console.log(PI)
 
+const getData = () => {
+    const request =  fetch("https://reqres.in/api/users?page=2")
+}
