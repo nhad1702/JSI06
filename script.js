@@ -51,6 +51,6 @@
 // console.log("multi", multi(1,2))
 // console.log(PI)
 
-const getData = () => {
-    const request =  fetch("https://reqres.in/api/users?page=2")
-}
+// const getData = () => {
+//     const request =  fetch("https://reqres.in/api/users?page=2")
+// }
