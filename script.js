@@ -1,56 +1,66 @@
-//function
-// function logger(name) {
-//     let result = `Hello ${name}`;
-//     return result;
+// const domEl = document.createElement('h1');
+// console.dir(domEl);
+// domEl.innerText = 'Hello';
+
+const rootEl = document.getElementById("root");
+// rootEl.appendChild(domEl);
+
+// const ulEl = document.createElement('ul');
+// console.dir(ulEl);
+
+// const liEl = document.createElement('li');
+// liEl.innerText = 'Text 1';
+// const liEl1 = document.createElement('li');
+// liEl1.innerText = 'Text 2';
+// const liEl2 = document.createElement('li');
+// liEl2.innerText = 'Text 3';
+
+// rootEl.appendChild(ulEl);
+// ulEl.appendChild(liEl);
+// ulEl.appendChild(liEl1);
+// ulEl.appendChild(liEl2);
+
+// function renderList(num) {
+//     for (let i = 0; i < num; i++) {
+//         const li = document.createElement('li');
+//         li.innerText = `Text ${i + 1}`;
+//         ulEl.appendChild(li);
+//     }
+//     rootEl.appendChild(ulEl);
 // }
 
-// logger("Mendy");
+// renderList(100)
 
-// const logger = (name) => {
-//     return `Hello ${name}`;
-// }
-// let res = logger("Duc");
-// console.log(res);
+// console.log("React", React);
 
-//OBJ
-// let person = {
-//     firstName: "D",
-//     lastName: "Nguyen",
-//     age: 17,
-// }
+const reactEl = React.createElement('h1', {
+    className: "greeting",
+    id: "greet",
+    style: {
+        // color: 'red'
+    }
+},
+    [
+        React.createElement('span', 
+        {}, 
+        React.createElement('b', {}, "Span1")
+        ),
+        React.createElement('span',
+        {},
+        React.createElement('b', {}, "Span2")
+        ),
+        React.createElement('span', 
+        {}, 
+        React.createElement('b', {}, "Span3")
+        ),
+    ]
+);
 
-// let fisrt = person.firstName;
-// let last = person.lastName;
-//Destructuring
-// const { firstName: newName, lastName, age } = person;
-// console.log(newName, lastName, age)
 
-// let fullName = "D Nguyen";
-// let age = 20;
+// rootReactEl.render(reactEl1);
 
-// let person = {
-//     fullName,
-//     age,
-// }
+const rootReactEl = ReactDOM.createRoot(rootEl);
+// console.log(ReactDOM)
+rootReactEl.render(reactEl);
 
-// console.log(person)
-
-//array
-// let num = [1, 2, 3, 4, 5];
-// let length = num.length;
-
-// // let str = ["a", "b", "c", "d", "e"];
-// console.log(num[2]);
-// console.log(num[length - 1]);
-
-//module: import / export / export default
-
-// import PI, { sum as newSum, sub, multi } from "./math.js";
-// console.log("sum", newSum(1,2))
-// console.log("sub", sub(1,2))
-// console.log("multi", multi(1,2))
-// console.log(PI)
-
-// const getData = () => {
-//     const request =  fetch("https://reqres.in/api/users?page=2")
-// }
+// console.log(reactEl);
