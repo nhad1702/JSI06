@@ -64,3 +64,11 @@ const rootReactEl = ReactDOM.createRoot(rootEl);
 rootReactEl.render(reactEl);
 
 // console.log(reactEl);
+
+const num = [1, 2, 3, 4, 5];
+let res = num.map( (number) => {
+    return number ** 2;
+});
+// for (let i = 0; i < num.length; i++) {
+//     res.push(num[i] ** 2);
+// }
