@@ -1,21 +1,17 @@
-import Header from './Header';
-import './App.css';
-import Nav from './Nav';
-import Side from './Side';
-import Content from './Content';
-import Foot from './Footer';
-
+import "./App.css";
+import Header from "./Header";
+import ProductList from "./ProductList";
+import LatestTrend from "./LatestTrend";
+import Footer from "./Footer";
+import { product } from "./mock/index";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Nav />
-      <div className='center'>
-        <Side />
-        <Content />
-      </div>
-      <Foot />
+      <ProductList  />
+      <LatestTrend />
+      <Footer />
     </div>
   );
 }
