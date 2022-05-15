@@ -1,23 +1,16 @@
-import Header from './Header';
-import './App.css';
-import Nav from './Nav';
-import Side from './Side';
-import Content from './Content';
-import Foot from './Footer';
+import React from 'react';
+import "./App.css";
+import tdC from './component/Todocontain';
+import tdInput from './component/Todoinput';
+import tdList from './component/Todolist';
+import tdItem from './component/TodoItem';
 
-
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Nav />
-      <div className='center'>
-        <Side />
-        <Content />
-      </div>
-      <Foot />
+const App = () => {
+  return [
+    <div>
+      <tdC />
     </div>
-  );
-}
+  ];
+};
 
 export default App;
