@@ -1,22 +1,33 @@
-export const data = [
+export const Data = [
     {
-        id: 1,
-        title: "play ...",
-        isComplete: true,
+        size: "lg",
+        src: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
+        color: "secondary",
+
+    }, 
+    {
+        size: "lg",
+        src: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+        color: "primary",
     },
     {
-        id: 2,
-        title: "play ...",
-        isComplete: true,
+        size: "lg",
+        src: "https://i.pravatar.cc/150?u=a04258114e29026702d",
+        color: "success"
     },
     {
-        id: 3,
-        title: "play ...",
-        isComplete: true,
+        size: "lg",
+        src: "https://i.pravatar.cc/150?u=a048581f4e29026701d",
+        color: "warning",
     },
     {
-        id: 4,
-        title: "play ...",
-        isComplete: true,
+        size: "lg",
+        src: "https://i.pravatar.cc/150?u=a092581d4ef9026700d",
+        color: "error",
+    },
+    {
+        size: "lg",
+        src: "https://i.pravatar.cc/150?u=a042581f4e25056704b",
+        color: "gradient",
     },
 ]

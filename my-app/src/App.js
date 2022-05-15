@@ -1,16 +1,24 @@
-import React from 'react';
-import "./App.css";
-import tdC from './component/Todocontain';
-import tdInput from './component/Todoinput';
-import tdList from './component/Todolist';
-import tdItem from './component/TodoItem';
+import React, { useState } from 'react';
+// import TodoCompo from './component/Todocompo';
+// import Login from './component/Login';
+import Demo from './component/demoNextUI';
+import './App.css';
+import Data from 'mockData';
 
-const App = () => {
+export default function App() {
+  // const [isLogin, setIsLogin] = useState(false);
+  // const onclickHandler = () => {
+  //   setIsLogin(!isLogin)
+  // }
+
   return [
     <div>
-      <tdC />
+      {/* {isLogin === true ? <TodoCompo /> : <Login />} */}
+      {/* <button onClick={onclickHandler}>
+        {isLogin === true ? "logout" : "login"}
+      </button> */}
+      <Demo />
     </div>
   ];
-};
+}
 
-export default App;
