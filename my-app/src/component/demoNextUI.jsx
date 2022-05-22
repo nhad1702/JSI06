@@ -1,12 +1,3 @@
-import React from "react";
-import { Avatar } from "@nextui-org/react";
+import React from 'react';
+import { Avatar, Button, Model } from "@nextui-org/react";
 
-const Demo = () => {
-  return [
-    <div>
-      <img />
-    </div>,
-  ];
-};
-
-export default Demo;
